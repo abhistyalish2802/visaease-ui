@@ -1,0 +1,136 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6fb;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2c6bed;
+}
+
+.header-actions{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.save-btn{
+background:#2c6bed;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.container{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:60px;
+}
+
+.steps{
+display:flex;
+gap:15px;
+margin-bottom:30px;
+}
+
+.steps span{
+width:35px;
+height:35px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#ddd;
+}
+
+.steps span.active{
+background:#2c6bed;
+color:white;
+}
+
+.card{
+background:white;
+padding:40px;
+width:420px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+display:none;
+}
+
+.card.active{
+display:block;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.primary{
+background:#2c6bed;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+margin-top:15px;
+}
+
+.nav-buttons{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+.upload-box{
+border:2px dashed #bbb;
+padding:40px;
+margin:20px 0;
+}
+
+.submit{
+background:green;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:6px;
+}
+
+footer{
+background:white;
+padding:20px;
+text-align:center;
+box-shadow:0 -2px 8px rgba(0,0,0,0.05);
+}
+
+.footer-links{
+margin-top:10px;
+}
+
+.footer-links a{
+margin:0 10px;
+text-decoration:none;
+color:#2c6bed;
+}

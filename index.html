@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VisaEase - Student Visa Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">VisaEase</div>
+
+<div class="header-actions">
+<a href="#">Help</a>
+<button class="save-btn">Save Progress</button>
+</div>
+</header>
+
+<div class="container">
+
+<!-- STEP INDICATOR -->
+<div class="steps">
+<span class="active">1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+</div>
+
+<!-- SCREEN 1 -->
+<div class="card screen active">
+
+<h2>Student Visa Application</h2>
+
+<p>
+Complete your visa application in 5 simple steps.  
+Save your progress anytime and return later.
+</p>
+
+<button class="primary" onclick="nextStep()">Start Application</button>
+
+<p class="resume">
+Already started? <a href="#">Resume Application</a>
+</p>
+
+</div>
+
+<!-- SCREEN 2 -->
+<div class="card screen">
+
+<h2>Personal Information</h2>
+
+<input placeholder="First Name">
+<input placeholder="Last Name">
+<input type="date">
+<input placeholder="Passport Number">
+<input placeholder="Nationality">
+<input placeholder="Email Address">
+
+<div class="nav-buttons">
+<button onclick="prevStep()">Back</button>
+<button onclick="nextStep()">Continue</button>
+</div>
+
+</div>
+
+<!-- SCREEN 3 -->
+<div class="card screen">
+
+<h2>Education Background</h2>
+
+<input placeholder="Institution Name">
+<input placeholder="Course Name">
+<input placeholder="Study Duration">
+<input placeholder="Student ID">
+
+<div class="nav-buttons">
+<button onclick="prevStep()">Back</button>
+<button onclick="nextStep()">Continue</button>
+</div>
+
+</div>
+
+<!-- SCREEN 4 -->
+<div class="card screen">
+
+<h2>Upload Documents</h2>
+
+<div class="upload-box">
+Drag & Drop Files  
+<input type="file" multiple>
+</div>
+
+<p>Required Documents</p>
+
+<ul>
+<li>Passport Copy</li>
+<li>Offer Letter</li>
+<li>Financial Evidence</li>
+</ul>
+
+<div class="nav-buttons">
+<button onclick="prevStep()">Back</button>
+<button onclick="nextStep()">Continue</button>
+</div>
+
+</div>
+
+<!-- SCREEN 5 -->
+<div class="card screen">
+
+<h2>Review Application</h2>
+
+<p>Please review your information before submitting.</p>
+
+<div class="nav-buttons">
+<button onclick="prevStep()">Back</button>
+<button class="submit" onclick="nextStep()">Submit Application</button>
+</div>
+
+</div>
+
+<!-- SCREEN 6 -->
+<div class="card screen">
+
+<h2>Application Submitted</h2>
+
+<p>Your student visa application has been successfully submitted.</p>
+
+<h3>Reference Number: VA-2026-STU-789456</h3>
+
+<button>Download Receipt</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VisaEase | Student Visa Application System</p>
+
+<div class="footer-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms</a>
+<a href="#">Contact</a>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
